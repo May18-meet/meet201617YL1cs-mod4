@@ -16,6 +16,11 @@ class MyStr(str) : #<-----Replace xyz-make a new class, MyStr, that inherits fro
         return self+'!'*num
 
     def replace(self, take_out, use_this):
+        take_out2=take_out.lower()
+        use_this2=use_this.lower()
+        return self.lower().replace(take_out2,use_this2)
+        
+        
         """
         Override the replace method of string.
         The new replace method is case-insensitive,
@@ -49,7 +54,9 @@ class MyStr(str) : #<-----Replace xyz-make a new class, MyStr, that inherits fro
         #       do this in as little as 1 line.
         #YOUR CODE BELOW:
         #################
-        str_lower_case=self_lower()
-        self.take_out=take_out()
-        str_lower_case=replace()
-        final_str=str_lower_case.replace( )
+        
+        #str_lower_case=self_lower()
+        #self.take_out=take_out()        
+        #str_lower_case=replace()
+        
+        #final_str=str_lower_case.replace( )
